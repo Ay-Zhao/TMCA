@@ -64,24 +64,18 @@ Run commands from the repository root.
 Single-task or binary classification:
 
 ```bash
-python -m src.training.train_GGT_2 --dataset sider --n_tasks 1 --epochs 100 --batch_size 8
+python -m src.training.train_GGT_2 --dataset bbbp --n_tasks 1 --epochs 100 --batch_size 16
 ```
 
-Multi-label classification:
 
-```bash
-python -m src.training.train_GGT_multilabel --dataset sider --n_tasks 27 --epochs 100 --batch_size 8
-```
 
 Useful options include:
 
 - `--enabled_modality 1d 2d 3d`
 - `--fuse_mechanism plus`
-- `--strategy symmetric`
 - `--learning_rate 1e-3`
 - `--weight_decay 4e-4`
 - `--random_seed 0`
-- `--target_task -1`
 
 ## Notes
 
